@@ -88,3 +88,6 @@ Status can be updated through a **Toggle**
 
 ### Export Button
 As of creating the flow, **Export** function is not available yet
+
+### Pagination
+Pagination is increment by 10, 25, 50 and 100

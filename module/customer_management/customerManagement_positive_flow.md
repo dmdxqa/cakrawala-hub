@@ -90,3 +90,6 @@ Status can be updated through a **Toggle**
 
 ### Search Field
 Search field are used to find **Customer**
+
+### Pagination
+Pagination is increment by 10, 25, 50 and 100

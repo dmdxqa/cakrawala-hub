@@ -43,3 +43,6 @@ Filter can be perform with **Status** and **Role Name**
 
 ### Status Toggle
 Status can be updated through a **Toggle**
+
+### Pagination
+Pagination is increment by 10, 25, 50 and 100

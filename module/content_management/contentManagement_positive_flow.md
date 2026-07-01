@@ -84,3 +84,6 @@ Filter can be perform with **Status** and **Content Type**
 
 ### Search Function
 Search field are used to find **Article**
+
+### Pagination
+Pagination is increment by 10, 25, 50 and 100
