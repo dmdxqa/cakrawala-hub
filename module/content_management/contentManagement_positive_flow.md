@@ -1,4 +1,6 @@
-# Content Management Work Flow
+# Content Management Workflow
+
+## Overview
 
 Outlines the standard editorial lifecycle for creating, reviewing, and publishing articles on the public-facing customer portal. This workflow ensures all technical guides, FAQs, and system updates pass through an authorized review gate before becoming visible to external clients.
 

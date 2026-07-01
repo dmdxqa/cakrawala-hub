@@ -1,4 +1,6 @@
-# User Management Work Flow
+# User Management Workflow
+
+## Overview
 
 Outlines the authorization and account management flows designed to maintain system security. This document serves as the primary reference for validating permission boundaries, verifying data isolation during user creation, and testing account lifecycle states before deployment.
 

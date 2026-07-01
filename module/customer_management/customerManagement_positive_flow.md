@@ -1,4 +1,6 @@
-# Customer Management Work Flow
+# Customer Management Workflow
+
+## Overview
 
 Outlines the standard lifecycle for onboarding and managing customer data within the ecosystem. This workflow governs customer profile creation, asset linking, and account association to ensure all subsequent Work Orders and Sales Orders map accurately to the correct customer records.
 

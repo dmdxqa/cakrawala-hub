@@ -1,4 +1,6 @@
-# Roles Management Work Flow
+# Roles Management Workflow
+
+## Overview
 
 Defines the governance framework for creating, modifying, and configuring system roles. This workflow establishes Role-Based Access Control (RBAC) boundaries, ensuring that permissions across all modules—such as Work Orders, Sales Orders, and User Management—are strictly aligned with organizational and client hierarchies.
 

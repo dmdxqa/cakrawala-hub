@@ -148,3 +148,9 @@ Generates structured invoice reports for warranty-covered jobs, used for reconci
 
 #### Raw Reporting Export
 Exports raw operational data (work orders, sales orders, stock movements, claims) in bulk for analysis, compliance, or integration with external reporting tools.
+
+### General Field Rule
+
+#### Free Text/Text
+
+- Maximum character is 500 characters
