@@ -24,33 +24,41 @@ Outlines the standard lifecycle for onboarding and managing customer data within
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
 | Type | Dropdown | Customer or Dealer | - | YES |
-| Name | Text | Name for the user | - | YES |
-| Tax Payer ID | Number | Tax ID for user | Only input number | YES |
+| Name | Text | - | - | YES |
+| Tax Payer ID | Number | - | Numeric input only | YES |
 | Salutation | Dropdown | None, Mr, Ms, Mrs, Dr, Prof | - | NO |
-| Email | Text | User email | Email Parameters Rules | NO |
-| Mobile Phone | Number | User phone number | Need to start from +62/08/62 | YES |
-| Business Phone | Number | User business phone number | Same rule as Mobile Phone | NO |
-| Suffix | Text | Honorification | - | NO |
+| Email | Text | - | Must follow email format | NO |
+| Mobile Phone | Number | - | Must start from +62/08/62 | YES |
+| Business Phone | Number | - | Must start from +62/08/62 | NO |
+| Suffix | Text | - | - | NO |
 | Gender | Dropdown | Male or Female | - | NO |
-| Status | Dropdown | Active or In Active | - | YES |
-| Remark | Free Text | Note for user | - | No |
-| Membership Type | Dropdown | None, Standard, Silver, Gold, Platinum, Diamond | - | No |
+| Status | Dropdown | Active or Inactive | - | YES |
+| Remark | Free Text | - | - | NO |
+| Membership Type | Dropdown | None, Standard, Silver, Gold, Platinum, Diamond | - | NO |
 
 **Billing Address Information**
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
-| Country | Searchable Dropdown | Indonesia (but can change from user input) | - | NO |
-| Province | Dropdown | Indonesia Province | - | NO |
-| City | Dropdown | City from selected Province | Need to select the Province field | NO |
-| Sub District | Dropdown | City Sub District | Need to select the City | NO |
-| Village | Dropdown | Village inside the Sub Disrict | Need to select the Sub District | NO |
-| Street | Free Text | Street Address | - | NO |
-| Postal Code | Text | Postal Code address is auto-generated from Village selection | - | NO |
+| Country | Searchable Dropdown | - | Default: Indonesia, but can be changed | NO |
+| Province | Dropdown | - | - | NO |
+| City | Dropdown | - | Depends on Province selection | NO |
+| Sub District | Dropdown | - | Depends on City selection | NO |
+| Village | Dropdown | - | Depends on Sub District selection | NO |
+| Street | Free Text | - | - | NO |
+| Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
 **Mailing Address Information**
 
-Same field as **Billing Address Information**
+| Field | Input Field | Detail | Rules | Required |
+| --- | --- | --- | --- | --- |
+| Country | Searchable Dropdown | - | Default: Indonesia, but can be changed | NO |
+| Province | Dropdown | - | - | NO |
+| City | Dropdown | - | Depends on Province selection | NO |
+| Sub District | Dropdown | - | Depends on City selection | NO |
+| Village | Dropdown | - | Depends on Sub District selection | NO |
+| Street | Free Text | - | - | NO |
+| Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
 4. Click **Save** button
     - Additionally, if click **Save & New** it will save the current customer and open a new customer field

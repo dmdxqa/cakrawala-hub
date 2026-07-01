@@ -21,10 +21,10 @@ Defines the governance framework for creating, modifying, and configuring system
 4. Fill in the field, here are the detail :
 
 | Field | Input Field | Detail | Rules | Required |
-| --- |  --- | --- | --- | --- |
-| Role Name | Text | Name for the role | - | YES |
-| Description | Free Text | Description for the role | - | NO |
-| Status | Toggle | Switch toggle for Active or Inactive | - | YES |
+| --- | --- | --- | --- | --- |
+| Role Name | Text | - | - | YES |
+| Description | Free Text | - | - | NO |
+| Status | Toggle | Default: Active or Inactive | - | YES |
 
 5. Click **Save** button
 6. Verify **New Role** is listed and able to select on other menu

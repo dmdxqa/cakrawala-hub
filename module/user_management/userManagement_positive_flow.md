@@ -23,34 +23,42 @@ Outlines the authorization and account management flows designed to maintain sys
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
-| Role | Dropdown | Existing Role from @handover.md | - | YES |
+| Role | Dropdown | Existing Role from system | - | YES |
 | Salutation | Dropdown | None, Mr, Ms, Mrs, Dr, Prof | - | YES |
-| Name | Text | Name for the user | - | YES |
-| Email | Text | User email | Email Parameters Rules | YES |
-| Password | Text | Auto-generated from system | - | YES |
-| Mobile Phone | Number | User phone number | Need to start from +62/08/62 | YES |
-| Business Phone | Number | User business phone number | Same rule as Mobile Phone | NO |
-| Suffix | Text | Honorification | - | NO |
-| Tax Payer ID | Number | Tax ID for user | Only input number | NO |
+| Name | Text | - | - | YES |
+| Email | Text | - | Must follow email format | YES |
+| Password | Text | - | Auto-generated from system | YES |
+| Mobile Phone | Number | - | Must start from +62/08/62 | YES |
+| Business Phone | Number | - | Must start from +62/08/62 | NO |
+| Suffix | Text | - | - | NO |
+| Tax Payer ID | Number | - | Numeric input only | NO |
 | Gender | Dropdown | Male or Female | - | NO |
-| Status | Dropdown | Active or In Active | - | YES |
-| Remark | Free Text | Note for user | - | No |
+| Status | Dropdown | Active or Inactive | - | YES |
+| Remark | Free Text | - | - | NO |
 
 **Billing Address Information**
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
-| Country | Searchable Dropdown | Indonesia (but can change from user input) | - | NO |
-| Province | Dropdown | Indonesia Province | - | NO |
-| City | Dropdown | City from selected Province | Need to select the Province field | NO |
-| Sub District | Dropdown | City Sub District | Need to select the City | NO |
-| Village | Dropdown | Village inside the Sub Disrict | Need to select the Sub District | NO |
-| Street | Free Text | Street Address | - | NO |
-| Postal Code | Text | Postal Code address is auto-generated from Village selection | - | NO |
+| Country | Searchable Dropdown | - | Default: Indonesia, but can be changed | NO |
+| Province | Dropdown | - | - | NO |
+| City | Dropdown | - | Depends on Province selection | NO |
+| Sub District | Dropdown | - | Depends on City selection | NO |
+| Village | Dropdown | - | Depends on Sub District selection | NO |
+| Street | Free Text | - | - | NO |
+| Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
 **Mailing Address Information**
 
-Same field as **Billing Address Information**
+| Field | Input Field | Detail | Rules | Required |
+| --- | --- | --- | --- | --- |
+| Country | Searchable Dropdown | - | Default: Indonesia, but can be changed | NO |
+| Province | Dropdown | - | - | NO |
+| City | Dropdown | - | Depends on Province selection | NO |
+| Sub District | Dropdown | - | Depends on City selection | NO |
+| Village | Dropdown | - | Depends on Sub District selection | NO |
+| Street | Free Text | - | - | NO |
+| Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
 4. Click **Save** button
 5. Verify new User have been listed on the table

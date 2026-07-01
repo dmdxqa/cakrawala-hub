@@ -24,14 +24,14 @@ Outlines the standard editorial lifecycle for creating, reviewing, and publishin
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
-| URL Number | Text | Its for URL Slug | - | NO |
-| Title | Text | Title for the article | - | YES |
-| Summary | Text | Short summary of the article | - | YES |
-| Details Question | WYSIWYG | Question for article | - | YES |
-| Details Answer | WYSIWYG | Answer for the article | - | YES |
-| FAQ Category | Dropdown | Air & Water Solution, Beauty, Battery, Cameras & Camcorders, Home Appliances, Home Entertainment, Housing, Kitchen Appliances | Select FAQ group category | - | YES |
-| FAQ Sub Category | Dropdown | It will shown a list depend on choosen FAQ Category | Need to select FAQ Category first | - | NO |
-| Visible to Customer Portal | Checkbox | Article will shown on the Customer Portal article | - | NO |
+| URL Number | Text | - | URL slug format | NO |
+| Title | Text | - | - | YES |
+| Summary | Text | - | - | YES |
+| Details Question | WYSIWYG | - | - | YES |
+| Details Answer | WYSIWYG | - | - | YES |
+| FAQ Category | Dropdown | Air & Water Solution, Beauty, Battery, Cameras & Camcorders, Home Appliances, Home Entertainment, Housing, Kitchen Appliances | - | YES |
+| FAQ Sub Category | Dropdown | - | Depends on FAQ Category selection | NO |
+| Visible to Customer Portal | Checkbox | - | Controls visibility on Customer Portal | NO |
 
 5. Click **Save** button
     - After saving, status of the article is set to **Waiting To Published**
