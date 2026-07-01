@@ -152,3 +152,87 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Actual End Time | Time | - | Format: HH:mm | NO |
 | Duration Type | Dropdown | - | - | NO |
 | Duration | Text (read-only) | Auto-calculated from actual start & end time | - | NO |
+
+4. Click **Save** button
+5. After saving the **Work Order** it open the **Detail Work Order**
+6. Verify new Work Order have been listed on the table
+
+### Work Order Detail
+
+1. Access to **Work Order Management**
+2. Navigate to **Action** section
+3. Click **Details** button
+4. Verify **Work Order Details** is open
+
+### Edit Work Order
+
+1. Access to **Work Order Management**
+2. Navigate to **Action**
+    - Or navigate to **Details** and click **Edit** button from the detail page
+3. Click **Edit** button
+4. Verify **Edit Work Order** is open
+5. Update any field
+6. Click **Save** button
+7. Verify the changes
+
+### Filter Function
+Filter can be performed with **Status**, **Sub Status**, **Service Territory**, **Created By**, and **Created Date**
+
+### Search Function
+Search function can be performed with searching **WO Number**, **Status**, **Sub Status**, **Created By**
+
+### Pagination
+Pagination is increment by 10, 25, 50 and 100
+
+---
+
+## Business Workflow
+
+### GDN SC
+
+#### Completing a Work Order for Non Local Part
+
+1. Open **Work Order Details** with status **New** and have **Assigned to Technician (service center)**
+2. Change status to **In Progress** with sub status **Waiting for Repair to be Started** and **Save** the update
+3. After changing the status, user able to add **Part Request** and **Charge**
+    - For **Part Request** is optional to be inputted
+    - If both **Part Request** and **Charge** haven't inputted, it will prompted **Popup Warning**
+
+##### Part Request Section
+
+_Part Request Section_ is used for requesting and storing a part(s) from Local (service center stock itself) and Non local (CPC or other GDN SC).
+
+1. Click **Part Request** button
+2. **Part Request Popup** appear
+3. Fill in the field, here are the details :
+
+###### Part Request Information
+
+| Field | Input Field | Detail | Rules | Required |
+| --- | --- | --- | --- | --- |
+| WO Number | Text (read-only) | Auto-filled from selected Work Order | - | YES |
+| Service Territory | Text (read-only) | Auto-filled from Work Order technician assignment | - | YES |
+| Name Account | Text (read-only) | Auto-filled from selected customer | - | YES |
+| Model | Dropdown | List model are shown from system inventory | Default : Model from Work Order | YES |
+| Part Number | Dropdown | List Part Number are shown based on Model selection | - | YES |
+| Part Description | Text (read-only) | Auto-filled based on selected Part Number and Model | - | YES |
+
+4. Click **Search** button
+5. Verify **Request Part** table is appear, here are the header table data :
+
+| Add | Add	Service Territory |	Warehouse | Source | Part Number | Description | Quantity Available | Unit Price | Tax | Unit Price with Tax | Discount |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+6. Select **Local Part** by clicking **Add** from the table
+    - Can select multiple part
+7. Click **Add Part** button
+8. **Selected Part Request** is appear, here are the detail header table data :
+
+| ASC Buy | Requested Quantity | Service Territory | Warehouse | Source | Part Number | Description | Quantity Avaialable | Unit Price | Tax | Unit Price with Tax | Total Price Request | Total Price with Tax | Discount |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+9. Input **Requested Quantity** and Click **Request Part & Save** button
+10. **Confirmation Popup** appear with **Request Part Detail** and Click **Request Part** button
+11. Verify **Request Part** is appear on the **Part Request** section with status **Borrowed**
+    - **Availabe Stock** decreased and stock change to **On Hand Quantity** based on quantity inputted
+12. User open **Request Part Detail**
