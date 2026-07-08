@@ -126,6 +126,19 @@ Allows technicians or service staff to formally request spare parts for an activ
 #### Warehouse
 Manages the physical warehouse — item receipts, stock levels, bin locations, and movements. The source of truth for all stock-related queries across the platform.
 
+#### Stock Movement
+
+Stock movement is diffeneriate between 3 types (Available Stock, Reserved Quantity, On Hand Quantity)
+
+- Available Stock
+Available Stock is represent total current available stock on the Service Center that can be used for Local Part
+
+- Reserved Quantity
+Reserved Quantity are being used for part that being requested on WO or SO
+
+- On Hand Quantity
+On Hand Quantity is the total from Available Stock AND Reserved Quantity
+
 ---
 
 ### Schedule Management
