@@ -58,7 +58,7 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
     - Navigate to **Sparepart Management** and open **Sparepart Request** for **Part Request** is listed
 6. Verify **Receive** button is active and click **Receive** button
 7. **Part Request** status is change to **Received**
-    - Stock Part increase on **Reserved Quantity**
+    - **Reserved Quantity** is increase based total **Part Request**
 
 ---
 
@@ -103,6 +103,7 @@ _Charge Section_ is used for charge for the services for the technician (ie. tra
 9. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
 10. Verify WO status is change to **Close** with Sub status **Invoice (Unpaid)**
     - If WO have active Part Request, the status of that part is **Invoiced**
+    - Same as SO, the status change to **Invoiced** also
 11. User navigate to **Invoice Detail**
 12. Click **Payment** button and select **New Payment** button
 13. **Create Payment** popup appear, here are the details :
@@ -163,9 +164,17 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
 
 9. Input **Requested Quantity** and Click **Request Part & Save** button
 10. **Confirmation Popup** appear with **Request Part Detail** and Click **Request Part** button
-11. Verify **Request Part** is appear on the **Part Request** section with status **Borrowed**
-    - **Available Stock** decreased and stock change to **On Hand Quantity** based on quantity inputted
-    - If **Cancelled**, **Available Stock** increase and **On Hand Quantity** return to 0
+11. Verify **Request Part** is appear on the **Part Request** section with status **Waiting for Submit**
+    - an SO is auto-created for **Non Local** part being requested and it related to the WO
+
+
+
+
+
+
+
+
+    
 12. User open **Request Part Detail** and navigate to **Consume** section
 13. User input nominal on **Consume** field based on the total of **Quantity Requested**
     - If user **Consume** all of the part, there's **Return** part is 0
