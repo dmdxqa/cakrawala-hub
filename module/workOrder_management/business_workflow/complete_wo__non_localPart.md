@@ -49,25 +49,27 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
 
 #### Sales Order Relation to Work Order
 
-1. User navigate to auto-created **Sales Order** from Work Order
+1. User navigate to auto-created **Sales Order GDN** from Work Order
 2. Open the **Sales Order** details
 3. Verify **Part Request** is the same as on the Work Order Part Request and **Send SO Request** button is active
 4. Click **Send SO Request** button
 5. Verify **Part Request** status is change from **Waiting for Submit** to **Waiting for Confirmation**
     - **Part Request** status on **Work Order** also change
-    - Navigate to **Sparepart Management** and open **Sparepart Request** for **Part Request** is listed
+    - Navigate to **Sparepart Management** and open **Sparepart Request** where the **Part Request** is listed
 6. Verify **Receive** button is active and click **Receive** button
 7. **Part Request** status is change to **Received**
     - **Reserved Quantity** is increase based total **Part Request**
 
 ---
 
-12. User open **Request Part Detail** and navigate to **Consume** section
-13. User input nominal on **Consume** field based on the total of **Quantity Requested**
-    - If user **Consume** all of the part, there's **Return** part is 0
+#### Consume Part Request
+
+1. User open **Request Part Detail** and navigate to **Consume** section
+2. User input nominal on **Consume** field based on the total of **Quantity Requested**
+    - If user **Consume** all of the part, the **Return** part is 0
     - If user **Consume** some of the part, **Return** part is shown based on the remaining quantity and it will return to **Available Stock**
-14. Click **Save** button
-15. Verify **Request Part** status is change to **Consumed**
+3. Click **Save** button
+4. Verify **Request Part** status is change to **Consumed**
 
 ---
 
@@ -167,20 +169,78 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
 11. Verify **Request Part** is appear on the **Part Request** section with status **Waiting for Submit**
     - an SO is auto-created for **Non Local** part being requested and it related to the WO
 
+#### Sales Order Relation to Work Order
 
+1. User navigate to auto-created **Sales Order PASS** from Work Order
+2. Open the **Sales Order** details
+3. Verify **Part Request** is the same as on the Work Order Part Request and **Send SO Request** button is active
+4. Click **Send SO Request** button
+5. Verify **Part Request** status is change from **Waiting for Submit** to **Waiting Approval GDN SC**
+    - **Part Request** status on **Work Order** also change
 
+##### GDN SC Sales Order Approval
 
+1. GDN SC navigate to **Approval Management** menu and open **Sales Order** Tab
+2. Verify **Sales Order** approval request is appear, here are the table data :
 
+| ID Sales Order | Sales Order Number | Submitted By | Status | Verification Note | Approved By | Submitted At | Action |
+| --- | --- | --- | --- | --- | --- | --- | --- |
 
+3. Click open **Action** button and select **Approve** button
+4. Verify button for **Request CPC** and **Process Part** button is active
+5. Click **Process Part** button and verify confirmation popup appear with **Verification Note** text field
+6. Click **Approve** button
+    - Part status change to **Approval by GDN SC** on **Sales Order** and related **Work Order**
+7. Select **Request CPC** or **Process Part** button
+    - **Process Part**
+        1. After selecting **Process Part**, GDN SC navigate to **Sales Order GDN** and open tab **Processing Part**
+        2. Verify **Process Part** is appeared on the list and inside **Action** button, there's **Progress** is active; **Deliver** and **Generate Invoice** is disabled
+        3. Click **Progress** button
+            - Verify part status is change on **Sales Order** and related **Work Order**
+            - Verify **Deliver** button is active
+        4. Click **Deliver** button
+            - Verify part status is change on **Sales Order** and related **Work Order**
+            - PASS can **Receive** part from **Sales Order**
+            - Verify **Generate Invoice** button is active
+        5. Click **Generate Invoice** button
+            - Verify part status is change to **Invoice Unpaid** on **Sales Order** and Related **Work Order**
+            - If it have multiple parts, **Generate Invoice** behave differently, here are the detail :
+                - Part(s) can be **Generate Invoice** individually on **Sales Order - Processing Part**
+                - ONLY GDN SC can **Bulk Generate Invoice** multiple part(s) on **Sales Order PASS**
+                - If one/more part have been **Generate Invoice** individually and multiple parts is being **Bulk Generate Invoice**, the individual invoice is kept active
 
+    - **Request CPC**
+        1. After selecting **Request CPC**, GDN SC navigate to **Sparepart Management** and sub menu **Sparepart Request** and open tab **Sales Order**
+            - Status part change to **Waiting for Confirmation** on **Sales Order** and related **Work Order**
+        2. Verify requested part is appear on **Sparepart Request - Sales Order**
+        3. Click open **Action** button and click **Receive** button
+            - Status part change to **Received  by GDN SC**
+        4. GDN SC navigate to **Sales Order GDN** and open tab **Processing Part**
+        5. Verify requested part appeared on **Sales Order - Processing Part**
+        6. Click open **Action** button and click **Progress** button
+            - Verify part status is change on **Sales Order** and related **Work Order**
+            - Verify **Deliver** button is active
+        7. Click **Deliver** button
+            - Verify part status is change on **Sales Order** and related **Work Order**
+            - PASS can **Receive** part from **Sales Order**
+            - Verify **Generate Invoice** button is active
+        8. Click **Generate Invoice** button
+            - Verify part status is change to **Invoice Unpaid** on **Sales Order** and Related **Work Order**
+            - If it have multiple parts, **Generate Invoice** behave differently, here are the detail :
+                - Part(s) can be **Generate Invoice** individually on **Sales Order - Processing Part**
+                - ONLY GDN SC can **Bulk Generate Invoice** multiple part(s) on **Sales Order PASS**
+                - If one/more part have been **Generate Invoice** individually and multiple parts is being **Bulk Generate Invoice**, the individual invoice is kept active
 
-    
-12. User open **Request Part Detail** and navigate to **Consume** section
-13. User input nominal on **Consume** field based on the total of **Quantity Requested**
-    - If user **Consume** all of the part, there's **Return** part is 0
+---
+
+#### Consume Part Request
+
+1. User open **Request Part Detail** and navigate to **Consume** section
+2. User input nominal on **Consume** field based on the total of **Quantity Requested**
+    - If user **Consume** all of the part, the **Return** part is 0
     - If user **Consume** some of the part, **Return** part is shown based on the remaining quantity and it will return to **Available Stock**
-14. Click **Save** button
-15. Verify **Request Part** status is change to **Consumed**
+3. Click **Save** button
+4. Verify **Request Part** status is change to **Consumed**
 
 ---
 

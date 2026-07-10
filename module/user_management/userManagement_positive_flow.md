@@ -19,7 +19,7 @@ Outlines the authorization and account management flows designed to maintain sys
 2. Click **New User** button
 3. Fill in the field, here are the details :
 
-**Account Information**
+#### Account Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ Outlines the authorization and account management flows designed to maintain sys
 | Status | Dropdown | Active or Inactive | - | YES |
 | Remark | Free Text | - | - | NO |
 
-**Billing Address Information**
+#### Billing Address Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ Outlines the authorization and account management flows designed to maintain sys
 | Street | Free Text | - | - | NO |
 | Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
-**Mailing Address Information**
+#### Mailing Address Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |

@@ -20,7 +20,7 @@ Outlines the standard editorial lifecycle for creating, reviewing, and publishin
 3. It will open button selection and click **FAQ** button
 4. Fiil in the field, here are the details :
 
-**FAQ Information**
+#### FAQ Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |

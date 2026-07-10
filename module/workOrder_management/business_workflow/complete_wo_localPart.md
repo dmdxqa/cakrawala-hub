@@ -47,12 +47,17 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
 11. Verify **Request Part** is appear on the **Part Request** section with status **Borrowed**
     - **Available Stock** decreased and stock change to **Reserved Quantity** based on quantity inputted
     - If **Cancelled**, part return to **Available Stock** and **Reserved Quantity** return to 0
-12. User open **Request Part Detail** and navigate to **Consume** section
-13. User input nominal on **Consume** field based on the total of **Quantity Requested**
-    - If user **Consume** all of the part, there's **Return** part is 0
+
+---
+
+#### Consume Part Request
+
+1. User open **Request Part Detail** and navigate to **Consume** section
+2. User input nominal on **Consume** field based on the total of **Quantity Requested**
+    - If user **Consume** all of the part, the **Return** part is 0
     - If user **Consume** some of the part, **Return** part is shown based on the remaining quantity and it will return to **Available Stock**
-14. Click **Save** button
-15. Verify **Request Part** status is change to **Consumed**
+3. Click **Save** button
+4. Verify **Request Part** status is change to **Consumed**
 
 ---
 
@@ -151,12 +156,17 @@ _Part Request Section_ is used for requesting and storing a part(s) from Local (
 11. Verify **Request Part** is appear on the **Part Request** section with status **Borrowed**
     - **Available Stock** decreased and stock change to **Reserved Quantity** based on quantity inputted
     - If **Cancelled**, **Available Stock** increase and **Reserved Quantity** return to 0
-12. User open **Request Part Detail** and navigate to **Consume** section
-13. User input nominal on **Consume** field based on the total of **Quantity Requested**
-    - If user **Consume** all of the part, there's **Return** part is 0
+
+---
+
+#### Consume Part Request
+
+1. User open **Request Part Detail** and navigate to **Consume** section
+2. User input nominal on **Consume** field based on the total of **Quantity Requested**
+    - If user **Consume** all of the part, the **Return** part is 0
     - If user **Consume** some of the part, **Return** part is shown based on the remaining quantity and it will return to **Available Stock**
-14. Click **Save** button
-15. Verify **Request Part** status is change to **Consumed**
+3. Click **Save** button
+4. Verify **Request Part** status is change to **Consumed**
 
 ---
 

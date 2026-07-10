@@ -13,13 +13,13 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 
 ## Workflow
 
-### Create New Work Order
+## Create New Work Order
 
 1. Access to **Work Order Management**
 2. Click **New Work Order** button
 3. Fill in the field, here are the details :
 
-**Work Order Information**
+### Work Order Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Deposit | Currency | - | Default: Rp 0 | NO |
 | Description | Free Text | - | - | NO |
 
-**Customer Information**
+#### Customer Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -51,7 +51,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Street | Text (read-only) | Auto-filled from selected customer | - | NO |
 | Postal Code | Text (read-only) | Auto-filled from selected customer | - | NO |
 
-**Service Territory**
+#### Service Territory
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -65,7 +65,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Postal Code | Text (read-only) | Auto-filled from service territory | - | NO |
 | Street | Text (read-only) | Auto-filled from service territory | - | NO |
 
-**Product Information**
+#### Product Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -74,7 +74,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Model Code | Text (read-only) | Auto-filled from selected asset | - | YES |
 | Category Name | Text (read-only) | Auto-filled from selected asset | - | YES |
 
-**IRIS Information — Pre-Service**
+#### IRIS Information — Pre-Service
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -87,7 +87,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | ARC Code | Dropdown | - | - | NO |
 | MQC Code | Dropdown | - | - | NO |
 
-**IRIS Information — Post-Service (Active when Status is In Progress)**
+#### IRIS Information — Post-Service (Active when Status is In Progress)
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -99,7 +99,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Product Condition | Text | - | - | NO |
 | Special Instructions to Part Admin | Text | - | - | NO |
 
-**Technician Information**
+#### Technician Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -107,9 +107,9 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Service Territory Name | Text (read-only) | Auto-filled from selected technician | - | YES |
 
 
-**Service Appointment** _(Visible only when Job Type is **Onsite**)_
+### Service Appointment _(Visible only when Job Type is **Onsite**)_
 
-**Service Information**
+#### Service Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -119,7 +119,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Subject | Text | - | - | NO |
 | Service Note | Free Text | - | - | NO |
 
-**Address Information**
+#### Address Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -131,7 +131,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Postal Code | Text (read-only) | Auto-filled from selected customer | - | NO |
 | Street | Text (read-only) | Auto-filled from selected customer | - | NO |
 
-**Scheduled Information**
+#### Scheduled Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -142,7 +142,7 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 | Duration Type | Dropdown | - | - | NO |
 | Duration | Text (read-only) | Auto-calculated from start & end time | - | NO |
 
-**Actual Information** _(Active only when Status is **In Progress**)_
+#### Actual Information _(Active only when Status is **In Progress**)_
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |

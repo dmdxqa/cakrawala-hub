@@ -19,7 +19,7 @@ Outlines the standard lifecycle for onboarding and managing customer data within
 2. Click **New Customer** button
 3. Fill in the field, here are the details :
 
-**Account Information**
+#### Account Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -36,7 +36,7 @@ Outlines the standard lifecycle for onboarding and managing customer data within
 | Remark | Free Text | - | - | NO |
 | Membership Type | Dropdown | None, Standard, Silver, Gold, Platinum, Diamond | - | NO |
 
-**Billing Address Information**
+#### Billing Address Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -48,7 +48,7 @@ Outlines the standard lifecycle for onboarding and managing customer data within
 | Street | Free Text | - | - | NO |
 | Postal Code | Text (read-only) | Auto-generated from Village selection | - | NO |
 
-**Mailing Address Information**
+#### Mailing Address Information
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
