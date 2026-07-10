@@ -81,21 +81,23 @@ _Charge Section_ is used for charge for the services for the technician (ie. tra
 
 ---
 
-4. Change status to **Complete** and **Save** the update
-5. Verify **Generate Invoice** is active when status is **Complete**
-6. Click **Generate Invoice**
+#### WO Payment (Out Warranty)
+
+1. Change status to **Complete** and **Save** the update
+2. Verify **Generate Invoice** is active when status is **Complete**
+3. Click **Generate Invoice**
     - If both **Part Request** and **Charge** haven't inputted, it will prompt **Popup Warning**
-7. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
+4. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
     - When closing **Invoice Preview**, it will shown **Confirmation** popup
     - Invoice shown based on Part Request and Charge section
-8. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
+5. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
     - User can opt out, from **Printing** preview
-9. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
-10. Verify WO status is change to **Close** with Sub status **Invoice (Unpaid)**
+6. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
+7. Verify WO status is change to **Close** with Sub status **Invoice (Unpaid)**
     - If WO have active Part Request, the status of that part is **Invoiced**
-11. User navigate to **Invoice Detail**
-12. Click **Payment** button and select **New Payment** button
-13. **Create Payment** popup appear, here are the details :
+8. User navigate to **Invoice Detail**
+9. Click **Payment** button and select **New Payment** button
+10. **Create Payment** popup appear, here are the details :
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -104,8 +106,26 @@ _Charge Section_ is used for charge for the services for the technician (ie. tra
 | Cheque No | Text | - | - | NO |
 | Remark | Text | - | - | NO |
 
-14. Click **Save** button and verify **Payment** is appear on the **Payment Transaction** section
-15. Verify WO status is change to **Close** with Sub status **Invoice (Paid)**
+11. Click **Save** button and verify **Payment** is appear on the **Payment Transaction** section
+12. Verify WO status is change to **Close** with Sub status **Invoice (Paid)**
+
+#### WO Warranty (In Warranty) _(Active only when Customer Asset is In Warranty)_
+
+1. Change status to **Complete** and **Save** the update
+2. Verify **Generate Invoice** is active when status is **Complete**
+3. Click **Generate Invoice**
+    - If both **Part Request** and **Charge** haven't inputted, it will prompt **Popup Warning**
+4. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
+    - When closing **Invoice Preview**, it will shown **Confirmation** popup
+    - Invoice shown based on Part Request and Charge section
+5. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
+    - User can opt out, from **Printing** preview
+6. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
+7. Verify WO status is change to **Close** with Sub status **Invoice (Warranty)**
+8. Verify the **Submit Claim** button is active
+9. Click **Submit Claim** button
+    - WO sub status change to **Invoice (Claim Submitted)
+    - WO GDN SC are sent to Approval Management for PGI Approval
 
 ---
 
@@ -190,21 +210,23 @@ _Charge Section_ is used for charge for the services for the technician (ie. tra
 
 ---
 
-4. Change status to **Complete** and **Save** the update
-5. Verify **Generate Invoice** is active when status is **Complete**
-6. Click **Generate Invoice**
+#### WO Payment (Out Warranty)
+
+1. Change status to **Complete** and **Save** the update
+2. Verify **Generate Invoice** is active when status is **Complete**
+3. Click **Generate Invoice**
     - If both **Part Request** and **Charge** haven't inputted, it will prompt **Popup Warning**
-7. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
+4. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
     - When closing **Invoice Preview**, it will shown **Confirmation** popup
     - Invoice shown based on Part Request and Charge section
-8. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
+5. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
     - User can opt out, from **Printing** preview
-9. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
-10. Verify WO status is change to **Close** with Sub status **Invoice (Unpaid)**
+6. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
+7. Verify WO status is change to **Close** with Sub status **Invoice (Unpaid)**
     - If WO have active Part Request, the status of that part is **Invoiced**
-11. User navigate to **Invoice Detail**
-12. Click **Payment** button and select **New Payment** button
-13. **Create Payment** popup appear, here are the details :
+8. User navigate to **Invoice Detail**
+9. Click **Payment** button and select **New Payment** button
+10. **Create Payment** popup appear, here are the details :
 
 | Field | Input Field | Detail | Rules | Required |
 | --- | --- | --- | --- | --- |
@@ -213,5 +235,23 @@ _Charge Section_ is used for charge for the services for the technician (ie. tra
 | Cheque No | Text | - | - | NO |
 | Remark | Text | - | - | NO |
 
-14. Click **Save** button and verify **Payment** is appear on the **Payment Transaction** section
-15. Verify WO status is change to **Close** with Sub status **Invoice (Paid)**
+11. Click **Save** button and verify **Payment** is appear on the **Payment Transaction** section
+12. Verify WO status is change to **Close** with Sub status **Invoice (Paid)**
+
+#### WO Warranty (In Warranty) _(Active only when Customer Asset is In Warranty)_
+
+1. Change status to **Complete** and **Save** the update
+2. Verify **Generate Invoice** is active when status is **Complete**
+3. Click **Generate Invoice**
+    - If both **Part Request** and **Charge** haven't inputted, it will prompt **Popup Warning**
+4. After clicking **Generate Invoice**, verify it shown a **Invoice Preview**
+    - When closing **Invoice Preview**, it will shown **Confirmation** popup
+    - Invoice shown based on Part Request and Charge section
+5. Click **Save Invoice & Print** to save the **Invoice** and verify redirect to **Printing** preview
+    - User can opt out, from **Printing** preview
+6. Verify **Invoice** is appear on the **Invoice** section and digital invoice is appear on the **File & Attachment** section
+7. Verify WO status is change to **Close** with Sub status **Invoice (Warranty)**
+8. Verify the **Submit Claim** button is active
+9. Click **Submit Claim** button
+    - WO sub status change to **Invoice (Claim Submitted)
+    - WO GDN SC are sent to Approval Management for GDN Approval and PGI Approval

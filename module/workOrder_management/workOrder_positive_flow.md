@@ -175,6 +175,9 @@ The Work Order Management module is the core operational module of Cakrawala Hub
 6. Click **Save** button
 7. Verify the changes
 
+### General Rule
+
+- WO Onsite Job type needed to add **Transport** charge
 ### Filter Function
 Filter can be performed with **Status**, **Sub Status**, **Service Territory**, **Created By**, and **Created Date**
 
