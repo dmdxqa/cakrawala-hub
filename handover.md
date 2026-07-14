@@ -45,6 +45,66 @@ Customer → Work Order → Technician Assignment → Spare Part Request
 
 ---
 
+## Role-Based Visibility
+
+### Header Table Data
+
+| No | Module | Feature | Action | Superadmin | PGI | GDN HO | GDN SC | PASS | Technician GDN | Technician PASS | CCC |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 1 | Dashboard | Dashboard | View | YES |  |  |  |  |
+| 2 | User Access Management | User Management | View | YES |  |  |  |  |
+| 3 | User Access Management | User Management | Create | YES |  |  |  |  |
+| 4 | User Access Management | User Management | Edit | YES |  |  |  |  |
+| 5 | User Access Management | Roles Management | View | YES |  |  |  |  |
+| 6 | User Access Management | Roles Management | Create |YES  |  |  |  |  |
+| 7 | User Access Management | Roles Management | Edit | YES |  |  |  |  |
+| 8 | Work Order Management | Work Order | View | YES |  |  |  |  |
+| 9 | Work Order Management | Work Order | Create | YES |  |  |  |  |
+| 10 | Work Order Management | Work Order | Edit | YES |  |  |  |  |
+| 11 | Work Order Management | Work Order | Cancel | YES |  |  |  |  |
+| 12 | Customer Management | Customer | View | YES |  |  |  |  |
+| 13 | Customer Management | Customer | Create | YES |  |  |  |  |
+| 14 | Customer Management | Customer | Edit | YES |  |  |  |  |
+| 15 | Content Management | Content | View | YES |  |  |  |  |
+| 16 | Content Management | Content | Create | YES |  |  |  |  |
+| 17 | Content Management | Content | Edit | YES |  |  |  |  |
+| 18 | Claim Management | Claim | View | YES |  |  |  |  |
+| 19 | Claim Management | Claim | Process | YES |  |  |  |  |
+| 20 | Warranty & Asset Management | Asset Management | View | YES |  |  |  |  |
+| 21 | Warranty & Asset Management | Asset Management | Create | YES |  |  |  |  |
+| 22 | Warranty & Asset Management | Asset Management | Edit | YES |  |  |  |  |
+| 23 | Warranty & Asset Management | Warranty Management | View | YES |  |  |  |  |
+| 23 | Warranty & Asset Management | Warranty Management | Create | YES |  |  |  |  |
+| 24 | Warranty & Asset Management | Warranty Management | Edit | YES |  |  |  |  |
+| 25 | Approval Management | Approval Workflow | View | YES |  |  |  |  |
+| 26 | Approval Management | Approval Workflow | Approve | YES |  |  |  |  |
+| 27 | Approval Management | Approval Workflow | Reject | YES |  |  |  |  |
+| 28 | Sales Order Management | SO GDN | View | YES |  |  |  |  |
+| 29 | Sales Order Management | SO GDN | Create | YES |  |  |  |  |
+| 30 | Sales Order Management | SO GDN | Edit | YES |  |  |  |  |
+| 31 | Sales Order Management | SO GDN | Cancel | YES |  |  |  |  |
+| 32 | Sales Order Management | SO PASS | View | YES |  |  |  |  |
+| 33 | Sales Order Management | SO PASS | Create | YES |  |  |  |  |
+| 34 | Sales Order Management | SO PASS | Edit | YES |  |  |  |  |
+| 35 | Sales Order Management | SO PASS | Cancel | YES |  |  |  |  |
+| 36 | Quotation Management | Quotation | View | YES |  |  |  |  |
+| 37 | Quotation Management | Quotation | Create | YES |  |  |  |  |
+| 38 | Quotation Management | Quotation | Edit | YES |  |  |  |  |
+| 39 | Sparepart Management | Check Stock GDN | View | YES |  |  |  |  |
+| 40 | Sparepart Management | Check Stock PASS | View | YES |  |  |  |  |
+| 41 | Sparepart Management | Sparepart Request | View | YES |  |  |  |  |
+| 42 | Sparepart Management | Sparepart Request | View | YES |  |  |  |  |
+| 43 | Sparepart Management | Warehouse | View | YES |  |  |  |  |
+| 44 | Sparepart Management | Warehouse | Manage | YES |  |  |  |  |
+| 45 | Sparepart Management | Stock Movement | View | YES |  |  |  |  |
+| 46 | Schedule Management | Calendar List | View | YES |  |  |  |  |
+| 47 | Schedule Management | WO for Technician | View | YES |  |  |  |  |
+| 48 | Schedule Management | Technician Job List | View | YES |  |  |  |  |
+| 49 | Reporting | Invoice Register Warranty | Export | YES |  |  |  |  |
+| 50 | Reporting | Raw Reporting Export | Export | YES |  |  |  |  |
+
+---
+
 ## Feature Details
 
 ### Dashboard
@@ -78,7 +138,7 @@ Manages operational or informational content within the platform — such as ann
 ---
 
 ### Claim Management
-Handles warranty and service claims submitted by customers. Tracks claim status, links claims to relevant work orders and assets, and routes them through the appropriate approval or resolution flow.
+Manages warranty claims that have been approved by PGI. Tracks approved warranty claims in an "Accepted Claim" list, allowing PGI to generate consolidated claims compiled by service territory. Once generated, claims are removed from the Accepted Claim list and consolidated into a single claim number per month. Provides detailed claim information including fees breakdown (service, labour, transport, misc, parts), tax invoices, linked work orders, and associated documentation.
 
 ---
 
