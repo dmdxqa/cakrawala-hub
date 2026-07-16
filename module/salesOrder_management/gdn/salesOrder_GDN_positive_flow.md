@@ -38,8 +38,8 @@ Outlines the positive flow for Sales Order GDN (Goods Delivery Note) creation, e
 | Deposit | Currency Input | Deposit amount in Rp | Default: Rp 0 | NO |
 | Description | Free Text | Order description or special notes | Max 500 characters | NO |
 
-4. Click **Save** button
-5. Verify new Sales Order is created with **Draft** status and is listed in the Sales Order table
+4. Click **Save** button and verify redirect to newly created sales order
+5. Go back to **Sales Order Management > GDN** and Verify new Sales Order is created with **Draft** status and is listed in the Sales Order table
 
 ---
 
